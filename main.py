@@ -175,13 +175,14 @@ async def main():
 	async def wait_hours(event):
 		message = event.raw_text
 		if 'You earned' in message:	
-			print_msg_time(print_msg_time(Fore.YELLOW+'['+Fore.MAGENTA+' Bot_Zec '+Fore.YELLOW+']'+Fore.GREEN + f'{message}'+ Fore.RESET)
+			print_msg_time(Fore.YELLOW+'['+Fore.MAGENTA+' Bot_Zec '+Fore.YELLOW+']'+Fore.GREEN + f'{message}'+ Fore.RESET)
 			# No more ads
 	@client.on(events.NewMessage(chats=zcclick_channel, incoming=True))
 	async def no_ads(event):
 		message = event.raw_text
 		if 'no new ads available' in message:	
-			print_msg_time(print_msg_time(Fore.YELLOW+'['+Fore.MAGENTA+' Bot_Zec '+Fore.YELLOW+']'+Fore.RED + 'Maaf, Ads Sedang Habis !!!' + Fore.RESET)
+			print_msg_time(Fore.YELLOW+'['+Fore.MAGENTA+' Bot_Zec '+Fore.YELLOW+']'+Fore.RED + 'Maaf, Ads Sedang Habis !!!' + Fore.RESET)
 		exit(0)
+
 	await client.run_until_disconnected()
 asyncio.get_event_loop().run_until_complete(main())
