@@ -16,11 +16,12 @@ Perintah di termux
 6. Jika anda punya banyak akun telegram buat file dg extensi sh
     contoh namafile.sh
 7. ketik nano akun.sh
-8. lalu ketikan Dalam akun.sh
-   python3 main.py +62nomorakun1
-   python3 main.py +62nomorakun2
-   python3 main.py +62nomorakun3
-   dan seterusnya
+8. lalu ketikan Dalam file akun.sh
+
+python3 main.py +62nomorakun1
+python3 main.py +62nomorakun2
+python3 main.py +62nomorakun3
+dan seterusnya
 
 tekan volume bawah + keybord X Lalu keybord Y
 Untuk menyimpan file
