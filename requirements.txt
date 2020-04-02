@@ -1,0 +1,8 @@
+rsa
+pyaes
+asyncio
+async_generator
+colorama
+bs4
+requests
+telethon
