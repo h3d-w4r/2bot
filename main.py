@@ -21,19 +21,7 @@ def ketik(s):
 	for c in s + '\n':
 		sys.stdout.write(c)
 		sys.stdout.flush()
-		time.sleep(random.random() * 0.17)
-
-def tunggu(x):
-    sys.stdout.write("\r")
-    sys.stdout.write("                                                               ")
-    while x:
-       mins, secs = divmod(x, 60)
-       timeformat = '{:02d}:{:02d}'.format(mins, secs)
-       sys.stdout.write("\r")
-       sys.stdout.write(biru+"["+abu+"Telegram"+biru+"]"+cyan+"Menunggu"+abu+f" {timeformat} ")
-       sys.stdout.flush()
-       sleep(1)
-       x -= 1
+		time.sleep(random.random() * 0.18)
 
 def menunggu(i):
 	for x in range(0,i+1):
@@ -41,9 +29,6 @@ def menunggu(i):
 		sys.stdout.write("\033[1;92m[%s] Waiting %s %d\r"%(datetime.now().strftime("%H:%M:%S"),i,x))
 		sys.stdout.flush()
 		time.sleep(1)
-
-def pesan(message):
-	print(reset+'['+biru+f'{datetime.now().strftime("%H:%M:%S")}'+reset+']'+f'{message}')
 def get_response(url, method='GET'):
 	response = requests.request(method, url, headers={"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win32; x86) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36"}, timeout=15)
 	text_response = response.text
