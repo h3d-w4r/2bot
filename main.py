@@ -243,7 +243,7 @@ async def main():
 		if 'no new ads available' in message:	
 			print(kuning+'['+pink+'BotZec'+kuning+']'+merah+' Maaf, Iklan Visit Habis '+reset)
 			time.sleep(1)
-			await client.send_message(dogeclick_channel, '/balance ')
+			await client.send_message(zec, '/balance ')
 	@client.on(events.NewMessage(chats=zec, incoming=True))
 	async def balance(event):
 		message = event.raw_text
